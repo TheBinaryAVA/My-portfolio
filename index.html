@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Avanthika's Portfolio</title>
+<style>
+  :root {
+    --text-light: #222;
+    --text-dark: #f5f5f5;
+    --card-bg-light: rgba(255, 255, 255, 0.8);
+    --card-bg-dark: rgba(0, 0, 0, 0.5);
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    color: var(--text-light);
+    background: linear-gradient(270deg, #ff007f, #ff7f00, #ffff00, #00ff00, #00ffff, #0000ff, #8b00ff);
+    background-size: 1400% 1400%;
+    animation: rainbow 25s ease infinite;
+    transition: background 0.4s, color 0.4s;
+    scroll-behavior: smooth;
+  }
+
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  body.dark {
+    background: #0a0a0a;
+    color: var(--text-dark);
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  body.dark header {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  nav a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: opacity 0.3s;
+  }
+
+  nav a:hover {
+    opacity: 0.7;
+  }
+
+  .toggle-btn {
+    background: none;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  section {
+    max-width: 900px;
+    margin: 3rem auto;
+    background: var(--card-bg-light);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: background 0.4s;
+  }
+
+  body.dark section {
+    background: var(--card-bg-dark);
+  }
+
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  button.glow {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button.glow:hover {
+    box-shadow: 0 0 15px #fff, 0 0 30px #ff00ff, 0 0 45px #00ffff;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 0.5rem 0;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+</style>
+</head>
+
+<body>
+  <header>
+    <h2>Avanthika's Portfolio</h2>
+    <nav>
+      <a href="#about">About Me</a>      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="toggle-btn" id="theme-toggle">🌙</button>
+  </header>
+
+  <section class="hero" id="hero">
+    <img src="C:\Users\avant\Downloads" alt="Avanthika">
+    <h1>Avanthika</h1>
+    <p>Computer Science Student | Tech Enthusiast | Innovator</p>
+    <button class="glow">Download Resume</button>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm currently pursuing Computer Science and Engineering with a specialization in AI & Robotics at VIT Chennai. I have a strong passion for App Development, Web Development, and designing intelligent systems that transform complex ideas into innovative, real-world solutions with tangible impact.
+
+As a laureate of the NASA Space Apps Challenge, I have developed the ability to conceptualize, strategize, and execute cutting-edge projects within fast-paced, collaborative environments. My unique blend of technical expertise, creativity, visionary thinking, and team leadership ensures every project I undertake is innovative and results-driven.
+
+I am also a confident public speaker, skilled at articulating complex concepts clearly and persuasively. Driven by analytical rigor, creative problem-solving, and technical acumen, I am dedicated to pushing the boundaries of technology and contributing to impactful, forward-thinking solutions..</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech in Computer Science- AI And Robotics</strong> — VIT University (2025–2029)</li>
+      
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming: Python, JavaScript, HTML, CSS</li>
+      
+      <li>Tools: Git, Figma, Canva</li>
+      <li>Soft Skills: Leadership, Communication, Creativity</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Digital whiteboard:</strong> App with more than 10k users</li>
+      <li><strong>Task manager website</strong> Personal website to track tasks</li>
+      <li><strong>AI Gesture Recognizer:</strong></li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Winner – NASA Space Apps Challenge</li>
+      <li>Authored 2 books</li>
+      <li>Top 10 in National Coding Challenge</li>
+    </ul>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <p>I enjoy photography, music production, gaming, and reading about emerging technologies.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:avanthikapari25@gmail.com">avanthikapari25@gmail.com</a></p>
+    <p>LinkedIn: <a href="#">www.linkedin.com/in/avanthika-pari-711b26389</a></p>
+    
+  </section>
+
+  <footer>
+    <p>© 2025 Avanthika. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
